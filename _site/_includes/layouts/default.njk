@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else site.title }}</title>
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/prism.css"/>
+
+    <meta name="description" content="{{ description if description else site.description }}" />
+    <meta name='keywords' content='{% if tags %}{{ tags }},{% endif %}{{ site.tags }}'>
+    <meta property="og:title" content="{{ title if title else site.title }}">
+    <meta property="og:description" content="{{ description if description else site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{% if feature_image %}{{ site.url }}{{ feature_image }}{% else %}{{ site.url }}/img/cover.jpg{% endif %}">
+    {% if feature_alt %}<meta property="og:image:alt" content="{{ feature_alt }}">{% endif %}
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="article:author" content="{{ site.name }}">
+    {% if page.date %}<meta name="article:published_time" content="{{ page.date | date_to_datetime }}">{% endif %}
+    <meta name="theme-color" content="#eca9cb">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+  <body>
+    <header id="site_header">
+      <h1>sahil shukla</h1>
+      {% include "components/navigation.njk" %}
+    </header>
+    <div id="content">
+      {% block main %}{% endblock %}
+    </div>
+    {% include "components/footer.njk" %}
+  </body>
+</html>

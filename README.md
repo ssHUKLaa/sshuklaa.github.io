@@ -1,2 +1,0 @@
-# sshuk.la
- web site
