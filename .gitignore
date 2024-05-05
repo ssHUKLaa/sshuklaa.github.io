@@ -1,3 +1,5 @@
 node_modules
 www
 .DS_Store
+gh-pages
+gh-pages.pub
