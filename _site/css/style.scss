@@ -5,10 +5,42 @@ $active-links: rgb(44, 0, 187);
 $divider: rgb(0, 0, 0);
 $semi-bg: rgba(0, 119, 255, 0.211);
 
-/* Center the content */
+.header-content {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+
+.left-stuff {
+  animation: dropDown 1.5s ease forwards;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  
+}
+.image-container {
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  overflow: hidden; 
+  border-radius: 50%; 
+  border: 2px solid #333; 
+  margin-right: 10px;
+}
+
+.image-container img {
+  display: block; /* Ensure the image is displayed as a block element */
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+#header_title {
+  font-family: "Georgia", sans-serif;
+  font-size: 1.5em; /* Adjust font size as needed */
+}
 body {
   display: flex;
-  justify-content: center;
   height: 100vh;
   margin: 0;
   background: linear-gradient(-45deg, #b5b0b0, #333333, #c5b9b9, #333333);
@@ -30,20 +62,49 @@ body {
 }
 
 #centered_content {
-  text-align: center;
+  text-align: left;
+  font-size: 3em;
 }
 
-#header_title {
-  font-family: "Georgia", sans-serif;
-  font-size: 3em; /* Adjust font size as needed */
-  margin-bottom: 5px; /* Adjust as needed */
-  
-}
+
 #centered_content p {
-  margin-top: -10; /* Adjust as needed */
+  margin-top: -6%; /* Adjust as needed */
+  max-width:fit-content;
+  font-family: "Georgia", sans-serif;
 }
 #wrapper {
+  position: relative;
   animation: dropDown 1.5s ease forwards;
+  align-items: center;
+  display: flex; /* Display the list items in a flex container */
+  justify-content: center;
+  margin-top: -10%;
+  margin-left: 10%;
+}
+.gradient-text {
+  display: inline-block;
+  position: relative;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.letter:hover {
+  background: linear-gradient(to right, #000000, #3d3d3d); /* Adjust gradient colors as needed */
+  -webkit-background-clip: text; /* Apply background-clip to text for WebKit browsers */
+  background-clip: text; /* Apply background-clip to text for other browsers */
+  color: transparent; /* Set text color to transparent to allow the gradient to show through */
+  animation: animateGradient 2s linear infinite; /* Apply animation */
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%; /* Start position of the gradient */
+  }
+  100% {
+    background-position: 100% 50%; /* End position of the gradient */
+  }
 }
 
 @keyframes dropDown {
@@ -69,7 +130,7 @@ footer {
 .footer-content {
   flex: 1;
   display: flex;
-  justify-content: center; /* Align items to the left and right */
+  justify-content: center;
 }
 .footer-content:first-child > span { margin-right: auto; }
 
@@ -122,7 +183,7 @@ footer {
 .far-right-icon {
   flex: 1;
   clear: right;
-  margin-right: 0.5%;
+  margin-right: 1.5%;
 }
 .far-right-icon-box {
   float:right
