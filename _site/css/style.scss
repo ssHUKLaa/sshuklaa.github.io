@@ -194,6 +194,10 @@ footer {
 .far-right-icon-box {
   float:right
 }
+.far-right-icon-box a {
+  text-decoration:none !important;
+  text-decoration:none;
+}
 .hover-text {
   position: absolute;
   bottom: calc(100% + 5px); /* Position above the icon */
