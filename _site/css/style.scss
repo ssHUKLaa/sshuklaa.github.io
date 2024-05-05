@@ -9,7 +9,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 100vh;
   margin: 0;
   background: linear-gradient(-45deg, #b5b0b0, #333333, #c5b9b9, #333333);
   background-size: 400% 400%;
@@ -35,7 +35,7 @@ body {
 
 #header_title {
   font-family: "Georgia", sans-serif;
-  font-size: 5em; /* Adjust font size as needed */
+  font-size: 3em; /* Adjust font size as needed */
   margin-bottom: 5px; /* Adjust as needed */
   
 }
