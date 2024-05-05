@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(safeLinks);
   eleventyConfig.addPlugin(eleventySass);
 
-  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy("static");
 
   eleventyConfig.addFilter("date_to_datetime", (obj) => {
     const date = parseDate(obj);
