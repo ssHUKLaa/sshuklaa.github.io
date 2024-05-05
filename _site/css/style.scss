@@ -6,9 +6,8 @@ $divider: rgb(0, 0, 0);
 $semi-bg: rgba(0, 119, 255, 0.211);
 
 .header-content {
-  position: fixed;
+  position: absolute;
   display: flex;
-  width: 100%;
   height: 10%;
   margin-top: 1%;
   margin-left: 10%;
