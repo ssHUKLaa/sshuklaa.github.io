@@ -65,11 +65,18 @@ body {
   font-size: 3em;
 }
 
-
 #centered_content p {
   margin-top: -6%; /* Adjust as needed */
-  max-width:fit-content;
+  max-width: fit-content;
   font-family: "Georgia", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+  #centered_content p {
+    margin-top: -20%; /* Adjust margin-top for smaller screens */
+    font-size: 30;
+  }
 }
 #wrapper {
   position: relative;
