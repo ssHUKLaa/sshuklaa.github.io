@@ -67,10 +67,11 @@ footer {
 }
 
 .footer-content {
+  flex: 1;
   display: flex;
-  justify-content: space-between; /* Align items to the left and right */
-  align-items: center;
+  justify-content: center; /* Align items to the left and right */
 }
+.footer-content:first-child > span { margin-right: auto; }
 
 .footer-content nav ul {
   list-style: none;
@@ -79,29 +80,56 @@ footer {
   display: flex; /* Display the list items in a flex container */
   justify-content: center;
 }
+.footer-content nav ul li a img {
+  width: 35px;
+  height: 35px;
+}
 
+/* Media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+  .footer-content nav ul li a img {
+    width: 25px; /* Adjust the width for smaller screens */
+    height: 25px; /* Adjust the height for smaller screens */
+  }
+}
+/* Default styles for icons */
 .footer-content nav ul li {
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust the margin between icons */
+}
+
+/* Media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+  .footer-content nav ul {
+    margin-right: 5px; /* Reduce margin between icons for smaller screens */
+  }
 }
 
 .footer-content nav ul li:last-child {
   margin-right: 0;
 }
+.left-icons {
+  flex: 1;
+  display: flex; /* Group left icons and middle text */
+  align-items: center;
+  margin-left: 0.5%;
+}
 .middle-text {
+  flex: 1;
   font-family: "Georgia", sans-serif;
   font-size:x-small; /* Adjust font size as needed */
-  padding-right: 9%;
+  text-align: center;
 }
 .far-right-icon {
-  display: inline-block; /* Ensure icon remains inline with other elements */
-  position: relative; /* Needed for positioning the hover text */
+  flex: 1;
+  clear: right;
 }
-
+.far-right-icon-box {
+  float:right
+}
 .hover-text {
   position: absolute;
   bottom: calc(100% + 5px); /* Position above the icon */
-  left: 50%;
-  transform: translateX(-80%);
+  transform: translateX(-105%);
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   width: 80px;
@@ -111,7 +139,7 @@ footer {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.far-right-icon:hover .hover-text {
+.far-right-icon-box:hover .hover-text {
   visibility: visible;
   opacity: 1;
 }
