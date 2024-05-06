@@ -6,20 +6,27 @@ $divider: rgb(0, 0, 0);
 $semi-bg: rgba(0, 119, 255, 0.211);
 
 .header-content {
-  position: absolute;
+  position: relative;
   display: flex;
-  height: 10%;
+  width: 100%;
+  
+}
+.header-content nav {
+  display: flex; /* Display the list items in a flex container */
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
   margin-top: 1%;
   margin-left: 10%;
+  margin-right: 10%;
 }
-
 
 .left-stuff {
   animation: dropDown 1.5s ease forwards;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Align items vertically */
-  
 }
+
 .image-container {
   width: 60px; /* Adjust width as needed */
   height: 60px; /* Adjust height as needed */
@@ -34,12 +41,46 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   width: 100%; /* Ensure the image fills the container */
   height: auto; /* Maintain aspect ratio */
 }
+
+.right-stuff {
+  animation: dropDown 1.5s ease forwards;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.right-stuff button {
+  margin-left: 10px;
+}
+
+.hollow-button {
+  position: relative;
+  border: 2px solid rgb(27, 23, 23);
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255); /* Transparent background */
+  color: transparent; /* Transparent text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+  overflow: hidden; /* Ensure gradient is clipped to button boundaries */
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(33, 31, 31)); /* White to black gradient */
+  background-clip: text; /* Clip background to text */
+  -webkit-background-clip: text; /* For Safari */
+  font-family: "Georgia", sans-serif;
+  font-size: 1.2em;
+}
+
+.hollow-button:hover {
+  background-color: rgb(128, 128, 128); /* Darker grey on hover */
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+
 #header_title {
   font-family: "Georgia", sans-serif;
   font-size: 1.5em; /* Adjust font size as needed */
 }
 body {
-  display: flex;
   height: 100vh;
   margin: 0;
   background: linear-gradient(-45deg, #b5b0b0, #333333, #c5b9b9, #333333);
@@ -74,7 +115,7 @@ body {
 @media screen and (max-width: 768px) {
 
   #centered_content p {
-    margin-top: -20%; /* Adjust margin-top for smaller screens */
+    margin-top: -10%; /* Adjust margin-top for smaller screens */
     font-size: 30;
   }
 }
@@ -84,8 +125,8 @@ body {
   align-items: center;
   display: flex; /* Display the list items in a flex container */
   justify-content: center;
-  margin-top: -10%;
-  margin-left: 10%;
+  margin-top: 8%;
+  margin-left: 5%;
 }
 .gradient-text {
   display: inline-block;
@@ -94,22 +135,41 @@ body {
 
 .letter {
   display: inline-block;
+  animation-duration: 5s; /* Duration of each animation */
+  animation-timing-function: linear; /* Animation timing function */
+  animation-iteration-count: infinite; /* Animation iteration count */
+}
+.gradient-text .letter:nth-child(1) {
+  animation-name: animateGradient;
+  animation-delay: 0s; /* Apply animation with no delay for the first letter */
 }
 
-.letter:hover {
-  background: linear-gradient(to right, #000000, #3d3d3d); /* Adjust gradient colors as needed */
-  -webkit-background-clip: text; /* Apply background-clip to text for WebKit browsers */
-  background-clip: text; /* Apply background-clip to text for other browsers */
-  color: transparent; /* Set text color to transparent to allow the gradient to show through */
-  animation: animateGradient 2s linear infinite; /* Apply animation */
+.gradient-text .letter:nth-child(2) {
+  animation-name: animateGradient;
+  animation-delay: 0.5s; /* Apply animation with 0.5s delay for the second letter */
 }
 
+.gradient-text .letter:nth-child(3) {
+  animation-name: animateGradient;
+  animation-delay: 1s; /* Apply animation with 1s delay for the third letter */
+}
+.gradient-text .letter:nth-child(4) {
+  animation-name: animateGradient;
+  animation-delay: 1.5s; /* Apply animation with 1s delay for the third letter */
+}
+.gradient-text .letter:nth-child(5) {
+  animation-name: animateGradient;
+  animation-delay: 2s; /* Apply animation with 1s delay for the third letter */
+}
 @keyframes animateGradient {
   0% {
-    background-position: 0% 50%; /* Start position of the gradient */
+    color: rgb(11, 50, 147); /* Start color of the gradient */
+  }
+  50% {
+    color: rgb(142, 13, 13); /* Mid color of the gradient */
   }
   100% {
-    background-position: 100% 50%; /* End position of the gradient */
+    color: rgb(11, 50, 147); /* End color of the gradient */
   }
 }
 
