@@ -65,7 +65,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
   overflow: hidden; /* Ensure gradient is clipped to button boundaries */
-  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(33, 31, 31)); /* White to black gradient */
+  background-image: linear-gradient(to left, rgb(255, 255, 255), $text); /* White to black gradient */
   background-clip: text; /* Clip background to text */
   -webkit-background-clip: text; /* For Safari */
   font-family: "Georgia", sans-serif;
