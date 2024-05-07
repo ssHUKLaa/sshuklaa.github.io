@@ -9,6 +9,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   position: relative;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   
 }
 .header-content nav {
@@ -18,7 +19,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   width: 100%;
   margin-top: 1%;
   margin-left: 5%;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .left-stuff {
@@ -46,12 +47,21 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   animation: dropDown 1.5s ease forwards;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
+  flex-wrap: wrap;
 
+}
+@media screen and (max-width: 768px) {
+
+  .right-stuff {
+    margin-top: 5%;
+  }
 }
 .right-stuff button {
   right: 15%;
   margin-left: 35%;
+  margin-bottom: 3%;
 }
 
 .hollow-button {
@@ -210,6 +220,12 @@ html, body {
   justify-content: space-between;
   align-items:center;
 }
+@media screen and (max-width: 768px) {
+
+  .button-options {
+    margin-top: 5%; /* Adjust margin-top for smaller screens */
+  }
+}
 
 .section-2 {
   margin: 0;
@@ -252,6 +268,7 @@ html, body {
   flex-wrap: wrap;
 }
 #Heading_2 {
+  margin-left: -3%;
   transform: translateX(-300%); /* Initially slide the button off-screen */
   transition: transform 1.0s ease; /* Add a smooth transition effect */
   font-size: 5em;
