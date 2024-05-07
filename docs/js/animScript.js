@@ -1,11 +1,9 @@
-const slideInButtons = document.querySelectorAll('.slide-in-button');
+const heading2 = document.getElementById('Heading_2');
 window.addEventListener('scroll', () => {
-  slideInButtons.forEach(button => {
-    const buttonTop = button.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+  const heading2Top = heading2.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
 
-    if (buttonTop < windowHeight) {
-      button.style.transform = 'translateX(0)'; // Slide the button into view
-    }
-  });
+  if (heading2Top < windowHeight) {
+    heading2.style.transform = 'translateX(0)'; // Slide the heading into view
+  }
 });

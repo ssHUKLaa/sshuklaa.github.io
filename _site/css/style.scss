@@ -96,6 +96,7 @@ html, body {
   color: $text;
 }
 
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -208,8 +209,18 @@ html, body {
   justify-content: space-between;
   align-items:center;
 }
-.button-options-2 {
-  margin-top: 10%;
+
+.section-2 {
+  margin: 0;
+  background:#181717;
+  background-size: 400% 400%;
+  margin-top: 0;
+  animation: gradient 15s ease infinite;
+  color: $text;
+}
+
+
+.Skills-Stuff {
   padding-bottom: 10%;
   margin-left: 11%;
   margin-right: 11%;
@@ -217,9 +228,10 @@ html, body {
   justify-content: space-between;
   align-items:center;
 }
-.slide-in-button {
+#Heading_2 {
   transform: translateX(-300%); /* Initially slide the button off-screen */
   transition: transform 1.5s ease; /* Add a smooth transition effect */
+  font-size: 5em;
 }
 
 
