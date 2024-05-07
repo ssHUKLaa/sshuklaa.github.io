@@ -223,10 +223,29 @@ html, body {
 
 .Skills-Stuff {
   margin-left: 11%;
+  margin-right: 11%;
   margin-bottom: 10%;
   display:inline-block;
   width: 100%;
 
+}
+/* Adjust left margin for different screen sizes */
+@media screen and (max-width: 992px) {
+  .Skills-Stuff {
+    margin-left: 8%; /* Adjust left margin for medium-sized screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Skills-Stuff {
+    margin-left: 5%; /* Adjust left margin for small screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Skills-Stuff {
+    margin-left: 3%; /* Adjust left margin for extra small screens */
+  }
 }
 .Horizontal-Languages {
   display: flex; /* Use Flexbox */
