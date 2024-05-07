@@ -17,7 +17,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   align-items:center;
   width: 100%;
   margin-top: 1%;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
 }
 
@@ -49,7 +49,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   margin-left: auto;
 }
 .right-stuff button {
-  margin-right: 30%;
+  right: 15%;
   margin-left: 15%;
 }
 
@@ -81,7 +81,9 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   font-family: "Georgia", sans-serif;
   font-size: 1.5em; /* Adjust font size as needed */
 }
-body {
+html, body {
+  max-width: 100%;
+  overflow-x:hidden;
   margin: 0;
   padding: 0;
 }
