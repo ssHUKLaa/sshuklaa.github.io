@@ -222,16 +222,15 @@ html, body {
 
 
 .Skills-Stuff {
-  padding-bottom: 10%;
   margin-left: 11%;
-  margin-right: 11%;
+  margin-bottom: 10%;
   display:inline-block;
-  justify-content: space-between;
-  align-items:center;
+  width: 100%;
 
 }
 .Horizontal-Languages {
   display: flex; /* Use Flexbox */
+  flex-wrap: wrap;
 }
 #Heading_2 {
   transform: translateX(-300%); /* Initially slide the button off-screen */
@@ -251,7 +250,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 .sub-heading {
   margin-top: -5%;
