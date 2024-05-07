@@ -225,14 +225,50 @@ html, body {
   padding-bottom: 10%;
   margin-left: 11%;
   margin-right: 11%;
-  display: flex;
+  display:inline-block;
   justify-content: space-between;
   align-items:center;
+
+}
+.Horizontal-Languages {
+  display: flex; /* Use Flexbox */
 }
 #Heading_2 {
   transform: translateX(-300%); /* Initially slide the button off-screen */
-  transition: transform 1.5s ease; /* Add a smooth transition effect */
+  transition: transform 1.0s ease; /* Add a smooth transition effect */
   font-size: 5em;
+  margin-bottom: 0%;
+}
+#Heading_3 {
+  transform: translateX(-300%); /* Initially slide the button off-screen */
+  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  margin-top: 13%;
+  font-size: 2em;
+}
+.Logo-container {
+  transform: translateX(-8000%); /* Initially slide the button off-screen */
+  transition: transform 1.5s ease; /* Add a smooth transition effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10%;
+}
+.sub-heading {
+  margin-top: -5%;
+  color:$text;
+}
+.sub-heading-2 {
+  transform: translateX(-300%); /* Initially slide the button off-screen */
+  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  margin-top: 0%;
+  color:#b5b0b0;
+}
+
+.Logo-container img {
+  margin-bottom: 5px; /* Adjust as needed */
+}
+#Heading_4 {
+  margin-top: 5px; /* Adjust as needed */
 }
 
 
