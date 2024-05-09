@@ -19,6 +19,15 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+const heading4 = document.getElementById('Heading_4');
+window.addEventListener('scroll', () => {
+  const heading4Top = heading4.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (heading4Top < windowHeight) {
+    heading4.style.transform = 'translateX(0)'; // Slide the heading into view
+  }
+});
 const logoContainers = document.querySelectorAll('.Logo-container');
 
 window.addEventListener('scroll', () => {
@@ -31,6 +40,21 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+const projContainers = document.querySelectorAll('.project-box');
+
+window.addEventListener('scroll', () => {
+  projContainers.forEach(container => {
+    const containerTopp = container.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (containerTopp < windowHeight) {
+      container.style.transform = 'translateX(0)'; // Slide the container into view
+    }
+  });
+});
+
+
 
 function scrollToSection(className) {
   var section = document.querySelector("." + className);

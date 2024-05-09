@@ -230,9 +230,7 @@ html, body {
 .section-2 {
   margin: 0;
   background:#181717;
-  background-size: 400% 400%;
   margin-top: 0;
-  animation: gradient 15s ease infinite;
   color: $text;
 }
 
@@ -240,7 +238,7 @@ html, body {
 .Skills-Stuff {
   margin-left: 11%;
   margin-right: 11%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   display:inline-block;
   width: 100%;
 
@@ -264,6 +262,10 @@ html, body {
   }
 }
 .Horizontal-Languages {
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap;
+}
+.Horizontal-Projects {
   display: flex; /* Use Flexbox */
   flex-wrap: wrap;
 }
@@ -302,10 +304,34 @@ html, body {
   margin-bottom: 5px; /* Adjust as needed */
 }
 #Heading_4 {
-  margin-top: 5px; /* Adjust as needed */
+  transform: translateX(300%); /* Initially slide the button off-screen */
+  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  font-size: 5em;
+  margin-bottom: 0%;
+  text-align: right;
+  margin-right: 21%;
 }
 
-
+.section-3 {
+  margin: 0;
+  margin-top: 0;
+  background:#2a2b2b;
+}
+.Projects-Stuff {
+  margin-left: 11%;
+  margin-bottom: 5%;
+  display:inline-block;
+  width: 100%;
+  color: $text;
+}
+.project-box {
+  transform: translateX(-8000%); /* Initially slide the button off-screen */
+  transition: transform 1.5s ease; /* Add a smooth transition effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5%;
+}
 /* Footer styles */
 footer {
   background-color: #333;
