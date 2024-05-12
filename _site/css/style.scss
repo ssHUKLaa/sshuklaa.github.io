@@ -268,6 +268,7 @@ html, body {
 .Horizontal-Projects {
   display: flex; /* Use Flexbox */
   flex-wrap: wrap;
+  margin-top: 1%;
 }
 #Heading_2 {
   transform: translateX(-300%); /* Initially slide the button off-screen */
@@ -324,13 +325,83 @@ html, body {
   width: 100%;
   color: $text;
 }
-.project-box {
-  transform: translateX(-8000%); /* Initially slide the button off-screen */
-  transition: transform 1.5s ease; /* Add a smooth transition effect */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 5%;
+.showcase {
+  transform: translateX(-300%); 
+  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  position: relative;
+  width: 30%;
+  height: 15em;
+  margin-left: 2%;
+  background: transparent;
+}
+.thumbnail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 300px;
+  z-index: 1;
+  
+  background: #293853;
+  background-position: 50% 50%;
+  background-size: cover;
+  
+  transition: left 250ms ease, down 250ms ease;
+}
+
+.thumbnail--awesome {
+  background-image: url("http://fc05.deviantart.net/fs70/f/2010/102/9/0/Google_Chrome_Wallpaper_by_dreski1992.jpg");
+}
+
+.thumbnail__overlay {
+  position: relative;
+  height: 100%;
+  
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  
+  text-align: center;
+  
+  opacity: 0;
+  
+  transition: opacity 250ms ease;
+}
+
+
+.showcase:hover {
+  
+  .thumbnail__overlay {
+    opacity: 1;
+  }
+  .desc {
+    width: 350px;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+    background: #202426;
+    
+    color: #fff;
+    
+    &:after {
+      border-color: transparent #202426 transparent transparent;
+    }
+  }
+}
+.btn {
+  
+  padding: 1em 2em;
+  
+  border: 0.15em solid #fff;
+  
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  
+  transition: background 250ms;
+  
+  &:hover {
+    background: rgba(0,0,0,0.6);
+  }
 }
 /* Footer styles */
 footer {

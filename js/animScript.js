@@ -54,6 +54,19 @@ window.addEventListener('scroll', () => {
   });
 });
 
+const projConfetainers = document.querySelectorAll('.showcase');
+
+window.addEventListener('scroll', () => {
+  projConfetainers.forEach(container => {
+    const containerToppp = container.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (containerToppp < windowHeight) {
+      container.style.transform = 'translateX(0)'; // Slide the container into view
+    }
+  });
+});
+
 
 
 function scrollToSection(className) {
