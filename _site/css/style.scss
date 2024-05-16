@@ -402,7 +402,7 @@ html, body {
   display: flex;
   justify-content: space-between; /* Space the items evenly */
   align-items: center;
-  transition: bottom 5s ease-in-out; /* Smooth transition for bottom position */
+  transition: bottom 0.3s ease-in-out; /* Smooth transition for bottom position */
   visibility: hidden;
 }
 
