@@ -62,3 +62,10 @@ function scrollToSection(className) {
   var section = document.querySelector("." + className);
   section.scrollIntoView({ behavior: 'smooth' });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const projectBoxContainer = document.querySelector('.project-box-container');
+  projectBoxContainer.addEventListener('touchstart', function () {
+      this.classList.toggle('hovered');
+  });
+});
