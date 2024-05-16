@@ -41,31 +41,20 @@ window.addEventListener('scroll', () => {
   });
 });
 
-const projContainers = document.querySelectorAll('.project-box');
+const logoContainerss = document.querySelectorAll('.Horizontal-Projects');
 
 window.addEventListener('scroll', () => {
-  projContainers.forEach(container => {
-    const containerTopp = container.getBoundingClientRect().top;
+  logoContainerss.forEach(container => {
+    const containerTop = container.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    if (containerTopp < windowHeight) {
+    if (containerTop < windowHeight) {
       container.style.transform = 'translateX(0)'; // Slide the container into view
     }
   });
 });
 
-const projConfetainers = document.querySelectorAll('.showcase');
 
-window.addEventListener('scroll', () => {
-  projConfetainers.forEach(container => {
-    const containerToppp = container.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (containerToppp < windowHeight) {
-      container.style.transform = 'translateX(0)'; // Slide the container into view
-    }
-  });
-});
 
 
 
