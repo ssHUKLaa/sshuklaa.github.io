@@ -13,7 +13,7 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   
 }
 .header-content nav {
-  display: flex; /* Display the list items in a flex container */
+  display: flex; 
   justify-content: space-between;
   align-items:center;
   width: 100%;
@@ -24,13 +24,13 @@ $semi-bg: rgba(0, 119, 255, 0.211);
 
 .left-stuff {
   animation: dropDown 1.5s ease forwards;
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  align-items: center; 
 }
 
 .image-container {
-  width: 60px; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
+  width: 60px; 
+  height: auto; 
   overflow: hidden; 
   border-radius: 50%; 
   border: 2px solid #333; 
@@ -38,9 +38,9 @@ $semi-bg: rgba(0, 119, 255, 0.211);
 }
 
 .image-container img {
-  display: block; /* Ensure the image is displayed as a block element */
-  width: 100%; /* Ensure the image fills the container */
-  height: auto; /* Maintain aspect ratio */
+  display: block; 
+  width: 100%; 
+  height: auto; 
 }
 
 .right-stuff {
@@ -69,28 +69,28 @@ $semi-bg: rgba(0, 119, 255, 0.211);
   border: 2px solid rgb(27, 23, 23);
   border-radius: 20px;
   padding: 10px 20px;
-  background-color: rgb(255, 255, 255); /* Transparent background */
-  color: transparent; /* Transparent text */
+  background-color: rgb(255, 255, 255);
+  color: transparent; 
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
-  overflow: hidden; /* Ensure gradient is clipped to button boundaries */
-  background-image: linear-gradient(to left, rgb(255, 255, 255), $text); /* White to black gradient */
-  background-clip: text; /* Clip background to text */
-  -webkit-background-clip: text; /* For Safari */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  overflow: hidden; 
+  background-image: linear-gradient(to left, rgb(255, 255, 255), $text); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
   font-family: "Georgia", sans-serif;
   font-size: 1.2em;
 }
 
 .hollow-button:hover {
-  background-color: rgb(128, 128, 128); /* Darker grey on hover */
-  transform: scale(1.1); /* Scale the button by 10% on hover */
+  background-color: rgb(128, 128, 128);
+  transform: scale(1.1); 
 }
 
 
 #header_title {
   font-family: "Georgia", sans-serif;
-  font-size: 1.5em; /* Adjust font size as needed */
+  font-size: 1.5em;
 }
 html, body {
   max-width: 100%;
@@ -126,7 +126,7 @@ html, body {
 }
 
 #centered_content p {
-  margin-top: -6%; /* Adjust as needed */
+  margin-top: -6%;
   max-width: fit-content;
   font-family: "Georgia", sans-serif;
 }
@@ -134,7 +134,7 @@ html, body {
 @media screen and (max-width: 768px) {
 
   #centered_content p {
-    margin-top: -10%; /* Adjust margin-top for smaller screens */
+    margin-top: -10%;
     font-size: 30;
   }
 }
@@ -142,7 +142,7 @@ html, body {
   position: relative;
   animation: dropDown 1.5s ease forwards;
   align-items: center;
-  display: flex; /* Display the list items in a flex container */
+  display: flex;
   justify-content: center;
   margin-top: 8%;
   margin-left: 5%;
@@ -154,41 +154,41 @@ html, body {
 
 .letter {
   display: inline-block;
-  animation-duration: 5s; /* Duration of each animation */
-  animation-timing-function: linear; /* Animation timing function */
-  animation-iteration-count: infinite; /* Animation iteration count */
+  animation-duration: 5s; 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite;
 }
 .gradient-text .letter:nth-child(1) {
   animation-name: animateGradient;
-  animation-delay: 0s; /* Apply animation with no delay for the first letter */
+  animation-delay: 0s;
 }
 
 .gradient-text .letter:nth-child(2) {
   animation-name: animateGradient;
-  animation-delay: 0.5s; /* Apply animation with 0.5s delay for the second letter */
+  animation-delay: 0.5s; 
 }
 
 .gradient-text .letter:nth-child(3) {
   animation-name: animateGradient;
-  animation-delay: 1s; /* Apply animation with 1s delay for the third letter */
+  animation-delay: 1s; 
 }
 .gradient-text .letter:nth-child(4) {
   animation-name: animateGradient;
-  animation-delay: 1.5s; /* Apply animation with 1s delay for the third letter */
+  animation-delay: 1.5s; 
 }
 .gradient-text .letter:nth-child(5) {
   animation-name: animateGradient;
-  animation-delay: 2s; /* Apply animation with 1s delay for the third letter */
+  animation-delay: 2s;
 }
 @keyframes animateGradient {
   0% {
-    color: rgb(29, 30, 33); /* Start color of the gradient */
+    color: rgb(29, 30, 33); 
   }
   50% {
-    color: rgb(227, 225, 225); /* Mid color of the gradient */
+    color: rgb(227, 225, 225); 
   }
   100% {
-    color: rgb(29, 30, 33); /* End color of the gradient */
+    color: rgb(29, 30, 33);
   }
 }
 @keyframes slideRight {
@@ -216,14 +216,14 @@ html, body {
   margin-left: 11%;
   margin-right: 11%;
   display: flex;
-  animation: slideRight 1.6s ease-out forwards; /* Add animation */
+  animation: slideRight 1.6s ease-out forwards; 
   justify-content: space-between;
   align-items:center;
 }
 @media screen and (max-width: 768px) {
 
   .button-options {
-    margin-top: 5%; /* Adjust margin-top for smaller screens */
+    margin-top: 5%; 
   }
 }
 
@@ -243,43 +243,43 @@ html, body {
   width: 100%;
 
 }
-/* Adjust left margin for different screen sizes */
+
 @media screen and (max-width: 992px) {
   .Skills-Stuff {
-    margin-left: 8%; /* Adjust left margin for medium-sized screens */
+    margin-left: 8%; 
   }
 }
 
 @media screen and (max-width: 768px) {
   .Skills-Stuff {
-    margin-left: 5%; /* Adjust left margin for small screens */
+    margin-left: 5%; 
   }
 }
 
 @media screen and (max-width: 576px) {
   .Skills-Stuff {
-    margin-left: 3%; /* Adjust left margin for extra small screens */
+    margin-left: 3%; 
   }
 }
 .Horizontal-Languages {
-  display: flex; /* Use Flexbox */
+  display: flex;
   flex-wrap: wrap;
 }
 #Heading_2 {
-  transform: translateX(-300%); /* Initially slide the button off-screen */
-  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  transform: translateX(-300%); 
+  transition: transform 1.0s ease;
   font-size: 5em;
   margin-bottom: 0%;
 }
 #Heading_3 {
-  transform: translateX(-300%); /* Initially slide the button off-screen */
-  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  transform: translateX(-300%); 
+  transition: transform 1.0s ease; 
   margin-top: 13%;
   font-size: 2em;
 }
 .Logo-container {
-  transform: translateX(-8000%); /* Initially slide the button off-screen */
-  transition: transform 1.5s ease; /* Add a smooth transition effect */
+  transform: translateX(-8000%); 
+  transition: transform 1.5s ease; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,18 +290,18 @@ html, body {
   color:$text;
 }
 .sub-heading-2 {
-  transform: translateX(-300%); /* Initially slide the button off-screen */
-  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  transform: translateX(-300%);
+  transition: transform 1.0s ease;
   margin-top: 0%;
   color:#b5b0b0;
 }
 
 .Logo-container img {
-  margin-bottom: 5px; /* Adjust as needed */
+  margin-bottom: 5px; 
 }
 #Heading_4 {
-  transform: translateX(300%); /* Initially slide the button off-screen */
-  transition: transform 1.0s ease; /* Add a smooth transition effect */
+  transform: translateX(300%);
+  transition: transform 1.0s ease;
   font-size: 5em;
   margin-bottom: 0%;
   text-align: right;
@@ -325,7 +325,7 @@ html, body {
   transition: transform 1.0s ease;
   margin-left: 10%;
   margin-right: 10%;
-  display: flex; /* Use Flexbox */
+  display: flex; 
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1%;
@@ -336,8 +336,8 @@ html, body {
   margin: 50px auto;
   overflow: hidden; 
   height: 300px;
-  border-radius: 20px; /* Adjust this value to change the roundness */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,21 +348,21 @@ html, body {
 .project-box {
   width: 100%;
   height: 100%;
-  background-size: cover; /* Cover the entire area of the box with the background image */
-  background-position: center; /* Center the background image */
+  background-size: cover; 
+  background-position: center; 
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items:normal; /* Center vertically */
+  justify-content: center;
+  align-items:normal; 
 }
 .project-box h1 {
-  text-align: center; /* Center align the text */
+  text-align: center; 
   font-size: 5em;
   color: rgb(255, 255, 255);
   text-shadow: 
         -1px -1px 0 rgb(65, 62, 62),  
         1px -1px 0 rgb(65, 62, 62),
         -1px 1px 0 rgb(65, 62, 62),
-        1px 1px 0 rgb(65, 62, 62); /* Create an outline effect */
+        1px 1px 0 rgb(65, 62, 62);
 }
 
 .project-hover-text {
@@ -377,62 +377,62 @@ html, body {
   font-family: "Georgia", sans-serif;
 }
 .project-hover-text h2 {
-  font-size: 24px; /* Larger font size for the title */
-  margin-bottom: 5px; /* Add margin to the bottom */
+  font-size: 24px; 
+  margin-bottom: 5px; 
   padding:0; 
   margin-bottom:0; 
 }
 
 .project-hover-text p {
-  font-size: 18px; /* Smaller font size for the subheading */
+  font-size: 18px; 
   padding:0; 
   margin-top:0; 
 }
 .project-box-container:hover .project-hover-text {
-  display: block; /* Display the hover text on hover */
+  display: block; 
 }
 .hidden-box {
   position: absolute;
-  bottom: -50px; /* Initially hide the box below its container */
+  bottom: -50px; 
   left: 0;
   width: 100%;
   background-color: #06060679;
   border-radius: 0 0 20px 20px;
   height: 50px;
   display: flex;
-  justify-content: space-between; /* Space the items evenly */
+  justify-content: space-between; 
   align-items: center;
-  transition: bottom 0.3s ease-in-out; /* Smooth transition for bottom position */
+  transition: bottom 0.3s ease-in-out; 
   visibility: hidden;
 }
 
 .hidden-box-left,
 .hidden-box-right {
-    flex: 1; /* Grow to fill the available space equally */
+  flex: 1; 
 }
 
 .hidden-box-left {
-    text-align: left; /* Align content to the left */
-    margin-left: 2%;
+  text-align: left; 
+  margin-left: 2%;
 }
 
 .hidden-box-right {
-    text-align: right; /* Align content to the right */
+    text-align: right; 
     margin-right: 2%;
 }
 
 .project-box-metaTFT {
-  background-image: url('../../static/metatftimg.png'); /* Specify the relative path to your second image file */
+  background-image: url('../../static/metatftimg.png'); 
 }
 
 .project-box-container:hover {
-  transform: scale(1.1); /* Scale by 1% when hovered over */
+  transform: scale(1.1);
 }
 .project-box-container:hover .project-box {
   filter: blur(2px);
 }
 .project-box-container:hover .hidden-box {
-  bottom: 0; /* Slide up the hidden box when parent box is hovered over */
+  bottom: 0; 
   visibility: visible;
 }
 /* Footer styles */
@@ -443,7 +443,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  animation: dropUp 1.6s ease-out forwards; /* Add animation */
+  animation: dropUp 1.6s ease-out forwards; 
 }
 
 .footer-content {
@@ -457,7 +457,7 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Display the list items in a flex container */
+  display: flex; 
   justify-content: center;
 }
 .footer-content nav ul li a img {
@@ -465,22 +465,22 @@ footer {
   height: 35px;
 }
 
-/* Media query for smaller screen sizes */
+
 @media screen and (max-width: 768px) {
   .footer-content nav ul li a img {
-    width: 25px; /* Adjust the width for smaller screens */
-    height: 25px; /* Adjust the height for smaller screens */
+    width: 25px; 
+    height: 25px; 
   }
 }
-/* Default styles for icons */
+
 .footer-content nav ul li {
-  margin-right: 10px; /* Adjust the margin between icons */
+  margin-right: 10px; 
 }
 
-/* Media query for smaller screen sizes */
+
 @media screen and (max-width: 768px) {
   .footer-content nav ul {
-    margin-right: 5px; /* Reduce margin between icons for smaller screens */
+    margin-right: 5px; 
   }
 }
 
@@ -489,14 +489,14 @@ footer {
 }
 .left-icons {
   flex: 1;
-  display: flex; /* Group left icons and middle text */
+  display: flex;
   align-items: center;
   margin-left: 0.5%;
 }
 .middle-text {
   flex: 1;
   font-family: "Georgia", sans-serif;
-  font-size:x-small; /* Adjust font size as needed */
+  font-size:x-small;
   text-align: center;
 }
 .far-right-icon {
@@ -513,7 +513,7 @@ footer {
 }
 .hover-text {
   position: absolute;
-  bottom: calc(100% + 5px); /* Position above the icon */
+  bottom: calc(100% + 5px);
   transform: translateX(-105%);
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
