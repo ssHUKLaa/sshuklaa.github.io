@@ -417,8 +417,33 @@ html, body {
 }
 
 .hidden-box-right {
-    text-align: right; 
-    margin-right: 2%;
+  display: flex;
+  justify-content: flex-end; 
+  text-align: right; 
+  margin-right: 2%;
+  gap: 3px;
+}
+.tech-box {
+  display: inline-block;
+  padding: 4.5px 9px; 
+  border: 1.8px solid black; 
+  border-radius: 18px;
+  text-decoration: none;
+  color: black; 
+  background-color: rgba(255, 255, 255, 0.214);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  font-size: 90%; 
+}
+
+.tech-box:hover {
+  transform: scale(1.1);
+}
+
+.tech-box:active {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly change the background color */
+  color: white; /* Change text color */
 }
 
 .project-box-metaTFT {
