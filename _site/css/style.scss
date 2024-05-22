@@ -425,11 +425,27 @@ html, body {
   background-image: url('../../static/metatftimg.png'); 
 }
 
+.project-box-msgme {
+  background-image: url('../../static/msgme.png'); 
+}
+
+.project-box-faceauth {
+  background-image: url('../../static/faceauth.png'); 
+}
+
+.project-box-dirtywar {
+  background-image: url('../../static/tnologo.jpg'); 
+}
+
+.project-box-oveja {
+  background-image: url('../../static/oveja.png'); 
+}
+
 .project-box-container:hover {
   transform: scale(1.1);
 }
 .project-box-container:hover .project-box {
-  filter: blur(2px);
+  filter: blur(10px);
 }
 .project-box-container:hover .hidden-box {
   bottom: 0; 
